@@ -4,6 +4,15 @@ const result = document.getElementById ("result");
 const searchBtn = document.getElementById ("search-btn");
 const cityRef = document.getElementById ("city");
 
+// Add event listener for "keypress" event on the input field
+cityRef.addEventListener("keypress", function(event){
+
+    //if the Enter key is pressed call the getWeather function
+    if (event.key == "Enter"){
+        getWeather();
+    }
+});
+
 //Function to fetch weather details from api and display them
 const getWeather = ()=> {
     const cityValue=cityRef.value;
