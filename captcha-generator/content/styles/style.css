@@ -1,0 +1,107 @@
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    height: 100vh;
+    font-family: "Roboto Mono", monospace;
+    background:linear-gradient(to bottom right,#acb6e5,#96e4d6 )no-repeat ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 32em;
+    padding: 3em;
+    border-radius: 0.5em;
+    box-shadow: 0em 0em 2em  rgba(252, 241, 241, 0.4);
+    background-color: transparent;    
+}
+
+.container__captcha {
+    height:70px;
+    display: flex;
+    align-content: center;
+    justify-content:space-between;
+    gap:1.5em;
+    margin: 1.5em 0;
+}
+
+.container__captcha-text {
+    width: 100%;
+    border: 1px solid  rgba(252, 241, 241, 0.5);; 
+    text-align: center;
+    border-radius: 6px;  
+}
+
+.container__captcha-refresh {
+    font-size: 35px;
+    width: 2.5em;
+    background-color:transparent;
+    border: 1px solid  rgba(252, 241, 241, 0.5);
+    border-radius: 20em;
+    color:#fff;
+    cursor: pointer;
+}
+
+.container__captcha-refresh:hover{
+    box-shadow: 0px 1px 7px 1px  rgba(252, 241, 241, 0.4); 
+}
+
+
+.captcha__input{  
+    height: 60px;
+    background-color:transparent;
+    font-size: 18px;
+    width: 100%;
+    padding: 1em 0.7em;
+    color: #fff;
+    border: 1px solid  rgba(252, 241, 241, 0.5);
+    border-radius: 6px;  
+    outline: none;
+}
+
+.captcha__input::placeholder {
+    color:#e5e5e5d4;
+}
+
+.static__message {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin-top: 0.5em;
+}
+
+.submit__btn {
+    width: 5em;
+    background-color:transparent;
+    color: #fff;
+    font-size: 1.2em;
+    border: 1px solid  rgba(252, 241, 241, 0.5);
+    padding: 0.8em 0;
+    border-radius: 6px;
+    margin-top: 1.2em;
+    margin-left: 35%;
+    cursor: pointer;
+    outline: none;
+}
+
+.submit__btn:hover {
+    box-shadow: 0px 1px 7px 1px  rgba(252, 241, 241, 0.4); 
+    /* background-color:#BBDEFB;  */
+}
+
+.result__message {
+    display: block;
+    font-family: "Roboto Mono";
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 1.5em;
+    text-align: center;
+    white-space: nowrap;
+}

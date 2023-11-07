@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Generator</title>
+</head>
+<!-- Import Font Awesome Icons library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- Import Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+<!-- Css Codes -->
+<link rel="stylesheet" href="content/styles/style.css">
+
+<body>
+   
+    <div class="wrapper">
+
+        <div class="container__captcha">
+
+            <!-- Canvas to display the CAPTCHA code -->
+            <canvas class="container__captcha-text" ></canvas>
+
+            <!-- Refresh button to regenerate the CAPTCHA code -->
+            <button  class="container__captcha-refresh" >
+                <i class="fa-solid fa-arrows-rotate"></i>
+            </button>
+
+        </div>
+
+        <!-- Text input for the user to enter the CAPTCHA code -->
+        <input type="text" class="captcha__input" placeholder="Please enter the captcha code displayed above" required>
+        
+        <p class="static__message">The CAPTCHA code is not case-sensitive</p>
+
+        <!-- Submit button to validate the entered CAPTCHA code -->
+        <button type="submit" class="submit__btn">Submit</button>
+
+        <!-- Paragraph to display the result message -->
+        <output id="resultMessage" class="result__message"></output>
+
+        
+    </div>
+
+    <script src="content/js/script.js"></script>
+    
+</body>
+</html>
