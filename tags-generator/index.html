@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tags Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Unicons CDN Link for Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      <div class="wrapper__title">
+        <img src="css/icons/tag.svg" alt="tag icon">
+        <h2>Tags</h2>
+      </div>
+      <div class="wrapper__content">
+        <p>Press enter or add a comma after each tag</p>
+        <p class="message"></p>
+        <ul class="tags-list">
+          <!-- Add Tags Here -->
+          <input type="text" spellcheck="false" class="tags-list__input">
+        </ul>
+      </div>
+      <div class="wrapper__footer">
+        <p><span class="count">10</span> of 10 tags are remaining</p>
+        <button class="remove-btn">Remove All</button>
+        <button class="copy-btn">Copy All</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
